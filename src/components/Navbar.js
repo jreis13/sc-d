@@ -6,9 +6,10 @@ import {
   faMessage,
   faBell,
   faListDots,
+  faMagnifyingGlass,
 } from "@fortawesome/free-solid-svg-icons";
 import logo from "../images/logo.png";
-import avatar from "../images/avatar.png";
+import avatar from "../images/hero.png";
 
 function Navbar() {
   return (
@@ -26,7 +27,7 @@ function Navbar() {
       </div>
       <div className="nav-btns">
         <a href="/" className="nav-btn">
-          <FontAwesomeIcon icon={faHouse} />{" "}
+          <FontAwesomeIcon icon={faHouse} />
         </a>
 
         <a href="/" className="nav-btn">
@@ -51,7 +52,7 @@ function Navbar() {
         </a>
         <div className="nav-ad-box">
           <a href="/" className="nav-ad">
-            <p>Premium</p>
+            <p>Try Premium</p>
           </a>
         </div>
       </div>

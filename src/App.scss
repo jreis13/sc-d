@@ -1,0 +1,378 @@
+@import "_variables";
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+body {
+  background-color: $background-color;
+  height: 150vh;
+}
+
+// ------------------------------ Higher Styles ------------------------------
+
+.top-elements {
+  display: flex;
+}
+
+.bot-elements {
+  display: flex;
+}
+
+// ------------------------------ Navbar Styles ------------------------------
+
+.Navbar {
+  top: 0;
+  position: sticky;
+  padding: 10px 25em;
+  display: flex;
+  border-bottom: $border;
+  background-color: white;
+  height: 2em;
+}
+
+.logo {
+  padding: 0 10px;
+}
+
+.search-box {
+  padding: 0 0 0 10px;
+  height: 30px;
+  width: 250px;
+  border: none;
+  border-radius: 5px;
+  background-color: #eef3f8;
+
+  &:focus {
+    width: 300px;
+    outline: none;
+  }
+
+  &::content {
+    padding-left: 10px;
+  }
+}
+
+.nav-btns {
+  padding: 5px 17em;
+  display: flex;
+}
+
+.nav-btn {
+  color: #666666;
+  font-size: 22px;
+  padding: 0 25px;
+}
+
+.avatar-box {
+  border-right: $border;
+  height: 100%;
+  padding-right: 1em;
+}
+
+.avatar {
+  padding: 0 1em;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  position: relative;
+  top: -5px;
+}
+
+.nav-ad {
+  text-decoration: none;
+  text-align: center;
+  font-size: 12px;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+// ------------------------------ Profile Styles ------------------------------
+
+.Profile {
+  padding: 1.5em 3em 1.5em 25em;
+  width: 50em;
+}
+
+.profile-contents {
+  background-color: #fff;
+  border-radius: 10px;
+  border: $border;
+  padding: 0.5em 0.5em 0;
+}
+
+.header-box {
+  margin: -0.5em;
+  overflow: hidden;
+  border-radius: 10px 10px 0 0;
+}
+
+.sc-img {
+  max-width: 100%;
+}
+
+.infos {
+  border-bottom: 1px solid #ebebeb;
+  padding: 1em 0.5em;
+}
+
+.description {
+  padding: 0.5em 0 0 0;
+}
+
+.category {
+  padding: 0 0 1em 0;
+  font-size: 12px;
+  color: #666666;
+}
+
+.profile-link {
+  color: #797979;
+  font-weight: bold;
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.profile-btns {
+  display: flex;
+  padding: 1em 0.5em 0 0;
+}
+
+.profile-btn {
+  text-decoration: none;
+}
+
+.btn-follow {
+  background-color: #0a66c2;
+  color: white;
+  font-weight: bold;
+  padding: 0.3em 1.7em;
+  border-radius: 15px;
+  margin-right: 0.5em;
+
+  &:hover {
+    background-color: #0859aa;
+  }
+}
+
+.btn-website {
+  background-color: transparent;
+  color: #0a66c2;
+  font-weight: bold;
+  border: 1px solid #0a66c2;
+  padding: 0.3em 0.6em;
+  border-radius: 15px;
+  margin-right: 0.5em;
+
+  &:hover {
+    background-color: #e2f0fe;
+    text-decoration: underline;
+  }
+}
+
+.btn-more {
+  background-color: transparent;
+  color: #757575;
+  border: 1px solid #757575;
+  padding: 0.3em 0.6em;
+  border-radius: 15px;
+
+  &:hover {
+    background-color: #ebebeb;
+  }
+}
+
+.profile-nav {
+  display: flex;
+  text-align: center;
+  justify-content: space-between;
+  max-width: 25em;
+  padding: 0.5em 0.5em 0 0.5em;
+}
+
+.p-navi {
+  text-decoration: none;
+  padding: 0.5em 0;
+  font-weight: bold;
+  color: #a8a8a8;
+}
+
+.selected {
+  color: #308050;
+  border-bottom: 2px solid #308050;
+}
+
+// ------------------------------ About Styles ------------------------------
+
+.About {
+  padding: 0 3em 1.5em 25em;
+  width: 50em;
+}
+
+.about-contents {
+  background-color: #fff;
+  border-radius: 10px;
+  border: $border;
+  padding: 0 1.5em 1.5em 1.5em;
+}
+
+.section-title {
+  padding: 1em 0 0 0;
+  font-size: 16pt;
+}
+
+.about-description {
+  padding: 1em 0 0 0;
+}
+
+.about-text-description {
+  font-size: 10pt;
+  color: #797979;
+  padding-bottom: 1em;
+}
+
+.section-subtitle {
+  padding: 1em 0 0 0;
+  font-size: 10pt;
+}
+
+.link {
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.about-link {
+  font-size: 10pt;
+  color: #0859aa;
+  font-weight: bold;
+  padding: 0.5em 0;
+}
+
+.category-text {
+  font-size: 10pt;
+  color: #797979;
+  padding: 0.5em 0;
+}
+
+.category-text-alt {
+  font-size: 10pt;
+  color: #797979;
+}
+
+.info-icon {
+  padding-left: 0.5em;
+}
+
+// ------------------------------ Side Styles ------------------------------
+.Sidepanel {
+  padding: 1.5em 0 0 0;
+}
+
+.Pages {
+  width: 20em;
+  margin-top: -6em;
+}
+
+.side-panel {
+  background-color: #fff;
+  border-radius: 10px;
+  border: 1px solid #ededed;
+  padding: 0.5em 0.5em 0;
+}
+
+.sidepanel-title {
+  padding: 0.5em 0.5em;
+  font-size: 14pt;
+  font-weight: lighter;
+}
+
+.company-card {
+  display: flex;
+  padding: 1.5em 0em 1.5em 0.5em;
+  border-bottom: $border;
+}
+
+.company-details {
+  padding-left: 1em;
+}
+
+.company-name {
+  font-size: 12pt;
+}
+
+.company-industry {
+  margin-top: 0.3em;
+  font-size: 8pt;
+}
+
+.company-followers {
+  margin-top: 0.5em;
+  color: #757575;
+  font-size: 8pt;
+}
+
+.similar-link {
+  text-decoration: none;
+}
+
+.similar {
+  text-align: center;
+  font-size: 12pt;
+  color: #757575;
+  padding: 0.7em 0;
+}
+
+.btn-side-link {
+  text-decoration: none;
+}
+
+.btn-side {
+  width: fit-content;
+  margin-top: 0.5em;
+  margin-top: 0.5em;
+  padding: 0.2em 1em;
+  border-radius: 13px;
+  color: #757575;
+  background-color: transparent;
+  border: 1px solid #757575;
+
+  &:hover {
+    background-color: #ebebeb;
+  }
+}
+
+// ------------------------------ Contact Styles ------------------------------
+
+.Contact {
+  display: flex;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  padding-right: 1em;
+}
+
+.contact-items {
+  font-size: 10pt;
+  align-items: center;
+  display: flex;
+  background-color: #fff;
+  padding: 0.5em;
+  border-radius: 10px 10px 0 0;
+}
+
+.contact-link {
+  font-size: 12pt;
+  color: black;
+  padding-left: 1em;
+}
