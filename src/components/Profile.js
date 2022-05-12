@@ -1,6 +1,7 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faUpRightFromSquare } from "@fortawesome/free-solid-svg-icons";
 import header from "../images/header.jpg";
+import profile from "../images/profile.jpg";
 
 function Profile() {
   return (
@@ -8,6 +9,10 @@ function Profile() {
       <div className="profile-contents">
         <div className="header-box">
           <img className="sc-img" src={header} alt="Header"></img>
+        </div>
+
+        <div className="profile-image">
+          <img className="profile-img" src={profile} alt="Profile"></img>
         </div>
 
         <div className="infos">
