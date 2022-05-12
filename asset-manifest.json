@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/sc-d/static/css/main.0276e3f0.css",
+    "main.js": "/sc-d/static/js/main.f8321878.js",
+    "static/media/hero.png": "/sc-d/static/media/hero.e92c3c9c080257b2abde.png",
+    "static/media/hiring.png": "/sc-d/static/media/hiring.23ced30dc909c08b9d78.png",
+    "static/media/profile.jpg": "/sc-d/static/media/profile.c6052c245b6d2049b4c7.jpg",
+    "index.html": "/sc-d/index.html",
+    "main.0276e3f0.css.map": "/sc-d/static/css/main.0276e3f0.css.map",
+    "main.f8321878.js.map": "/sc-d/static/js/main.f8321878.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.0276e3f0.css",
+    "static/js/main.f8321878.js"
+  ]
+}
